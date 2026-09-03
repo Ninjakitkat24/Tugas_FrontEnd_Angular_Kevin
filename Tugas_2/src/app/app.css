@@ -1,0 +1,15 @@
+.page-shell {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 28px;
+	min-height: calc(100vh - 72px);
+	padding: 18px 32px;
+}
+
+@media (max-width: 480px) {
+	.page-shell {
+		gap: 20px;
+		padding: 18px 0;
+	}
+}

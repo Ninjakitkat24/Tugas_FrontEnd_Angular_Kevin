@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<main class="page-shell">
+	@for (pokemon of pokemonLine; track pokemon.number) {
+		<app-card [pokemon]="pokemon"></app-card>
+	}
+</main>

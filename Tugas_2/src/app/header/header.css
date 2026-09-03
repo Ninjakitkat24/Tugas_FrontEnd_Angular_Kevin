@@ -1,0 +1,39 @@
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 35px 20px 35px;
+	background: #cecece;
+	border-bottom: 1px solid #dededf;
+}
+
+.site-header h1 {
+	margin: 0;
+	color: #202020;
+	font-family: calibri, 'trebuchet ms', sans-serif;
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.pokeball {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #202020;
+	border-radius: 50%;
+	background: linear-gradient(#ed5148 0 44%, #202020 44% 56%, #ffffff 56%);
+}
+
+.pokeball::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #202020;
+	border-radius: 50%;
+	background: #ffffff;
+	content: '';
+	transform: translate(-50%, -50%);
+}

@@ -1,0 +1,25 @@
+.text-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  min-height: 150px;
+}
+
+.text-box h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 42px;
+  font-style: bold;
+  font-family: 'Calibri', sans-serif;
+  border-bottom: 2px solid #ddd;
+}
+
+.text-box p {
+  margin: 0;
+  color: #555;
+  font-size: 24px;
+  font-family: 'Calibri', sans-serif;
+}

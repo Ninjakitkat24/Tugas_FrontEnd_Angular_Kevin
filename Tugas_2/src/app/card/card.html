@@ -1,0 +1,24 @@
+<article class="pokemon-card" [attr.aria-label]="pokemon.name + ' Pokemon card'">
+	<div class="card-topline">
+		<span class="card-number">No.{{ pokemon.number }}</span>
+
+		<div class="card-icons" aria-label="Pokemon types">
+			@for (type of pokemon.types; track type.name) {
+				<span class="type-badge {{ type.name }}" [title]="type.label">
+					<img [src]="type.icon" [alt]="type.label" />
+				</span>
+			}
+		</div>
+	</div>
+
+	<div class="card-content">
+		<h1 class="card-name">{{ pokemon.name }}</h1>
+
+		<div class="pokemon-stage">
+			<img
+				src="{{ pokemon.image }}"
+				alt="{{ pokemon.name }}"
+			/>
+		</div>
+	</div>
+</article>

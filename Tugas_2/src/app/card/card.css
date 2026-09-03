@@ -1,0 +1,136 @@
+.pokemon-card {
+	width: min(400px, calc(100vw - 64px));
+	min-height: 620px;
+	overflow: hidden;
+	border-radius: 20px;
+	background: #ffffff;
+	box-shadow: 0 18px 35px rgba(80, 90, 140, 0.14);
+}
+
+.card-topline {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 65px;
+	padding: 0 20px 0 36px;
+	background: #cecece;
+}
+
+.card-topline::after {
+	position: absolute;
+	right: -1px;
+	bottom: -1px;
+	width: 155px;
+	height: 68px;
+	border-radius: 100% 0 0;
+	background: #ffffff;
+	content: '';
+}
+
+.card-number {
+	z-index: 1;
+	color: #171717;
+    font-family: calibri, 'trebuchet ms', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.card-icons {
+	z-index: 2;
+	display: flex;
+	gap: 14px;
+}
+
+.type-badge {
+	display: grid;
+	width: 37px;
+	height: 37px;
+	place-items: center;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 31px 31px;
+}
+
+.type-badge.grass {
+	background: #2ebc2d;
+}
+
+.type-badge.poison {
+	background: #9144d3;
+}
+
+.type-badge.fire {
+	background: #f05a32;
+}
+
+.type-badge.water {
+	background: #3e8fe8;
+}
+
+.type-badge.flying {
+	background: #8b9ed6;
+}
+
+.card-content {
+	padding: 67px 17px 23px;
+}
+
+.card-name {
+    text-align: center;
+    font-family: calibri, 'trebuchet ms', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0 0 60px;
+}
+
+
+.type-badge img {
+	width: 31px;
+	height: 31px;
+	object-fit: contain;
+	filter: brightness(0) invert(1);
+}
+
+.pokemon-stage {
+	position: relative;
+	display: grid;
+	width: min(365px, 100%);
+	aspect-ratio: 1;
+	overflow: hidden;
+	place-items: center;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #d8d8d8 0 55%, #d3d3d3 55% 100%);
+}
+
+.pokemon-stage::after {
+	position: absolute;
+	inset: 50% 0 auto;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.35);
+	content: '';
+}
+
+.pokemon-stage img {
+	position: relative;
+	z-index: 1;
+	width: 84%;
+	height: 84%;
+	object-fit: contain;
+	filter: drop-shadow(0 5px 2px rgba(50, 50, 50, 0.12));
+}
+
+@media (max-width: 480px) {
+	.pokemon-card {
+		min-height: 570px;
+	}
+
+	.card-content {
+		padding-top: 54px;
+	}
+
+	.card-content h1 {
+		margin-bottom: 52px;
+	}
+}

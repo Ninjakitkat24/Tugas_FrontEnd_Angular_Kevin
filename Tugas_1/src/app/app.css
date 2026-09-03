@@ -1,0 +1,33 @@
+.app-header {
+  text-align: center;
+  padding: 30px;
+  background-color: #a0d8ffcb;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 64px;
+  font-style: bold;
+  font-family: 'Calibri', sans-serif;
+}
+
+.app-content {
+  padding: 30px;
+}
+
+/* Home dan About berdampingan */
+.top-section {
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.app-column {
+  flex: 1;
+}
+
+/* Contact berada di bawah */
+.contact-section {
+  margin: 25px auto 0;
+  width: 50%;
+}
