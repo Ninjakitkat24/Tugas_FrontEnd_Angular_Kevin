@@ -1,0 +1,28 @@
+<p>Contoh Penerapan NgClass</p>
+<div [ngClass]="currentClasses">This div is initially saveable, unchanged, and special.</div>
+<p>Contoh Penerapan NgStyle</p>
+<div [ngStyle]="biru">Div ini menggunakan NgStyle</div>
+<p>Contoh Penerapan NgModel</p>
+
+<!-- Text Input -->
+<div>
+  <label for="nama">Masukkan Nama: </label>
+  <input id="nama" type="text" [(ngModel)]="namaUser" />
+</div>
+
+<p>Halo, nama saya: <strong>{{ namaUser }}</strong></p>
+
+<hr />
+
+<!-- Checkbox Input -->
+<div>
+  <label>
+    <input type="checkbox" [(ngModel)]="isAktif" />
+    Status Aktif
+  </label>
+</div>
+
+<!-- Menampilkan elemen berdasarkan status checkbox via ngStyle -->
+<div [ngStyle]="{ 'color': isAktif ? 'green' : 'red' }">
+  Status saat ini: {{ isAktif ? 'AKTIF' : 'NONAKTIF' }}
+</div>

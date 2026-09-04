@@ -1,0 +1,29 @@
+/* Gaya dasar untuk elemen div */
+div {
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+/* Jika kelas saveable aktif */
+div.saveable {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-color: #6366f1;
+}
+
+/* Jika kelas modified aktif */
+div.modified {
+  border-left: 5px solid #f50b0b;
+}
+
+/* Jika kelas special aktif */
+div.special {
+  font-weight: bold;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}

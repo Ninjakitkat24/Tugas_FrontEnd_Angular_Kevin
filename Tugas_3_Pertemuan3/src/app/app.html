@@ -1,0 +1,13 @@
+<app-common></app-common>
+<h2 appHighlight [color]="highlightColor()">
+  Angular 21
+</h2>
+
+<label>
+  Warna:
+  <input type="color"
+    [value]="highlightColor()"
+    (input)="highlightColor.set(
+      $any($event.target).value)" />
+</label>
+<app-invoice></app-invoice>
