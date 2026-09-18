@@ -1,0 +1,41 @@
+<main class="dynamic-form-page">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-heading">
+      <p class="eyebrow">Dynamic Form</p>
+      <h1>Data pengguna</h1>
+      <p>Field form ini dibuat dari konfigurasi pertanyaan.</p>
+    </div>
+
+    @for (question of questions; track question.key) {
+      <div class="field">
+        <label [attr.for]="question.key">{{ question.label }}</label>
+        @switch (question.controlType) {
+      @case ('textbox') {
+            <input [formControlName]="question.key" [id]="question.key" [type]="question.type" />
+      }
+      @case ('dropdown') {
+            <select [id]="question.key" [formControlName]="question.key">
+          @for (option of question.options; track option.key) {
+            <option [value]="option.key">{{ option.value }}</option>
+          }
+        </select> 
+      }
+    }
+        @if (isInvalid(question.key)) {
+          <p class="error-message">{{ question.label }} wajib diisi dengan benar.</p>
+        }
+      </div>
+    }
+
+    <button type="submit">Simpan data</button>
+  </form>
+
+  @if (submittedValue) {
+    <section class="result" aria-live="polite">
+      <h2>Data berhasil disimpan</h2>
+      <p>Nama: {{ submittedValue['name'] }}</p>
+      <p>Email: {{ submittedValue['email'] }}</p>
+      <p>Role: {{ submittedValue['role'] }}</p>
+    </section>
+  }
+</main>

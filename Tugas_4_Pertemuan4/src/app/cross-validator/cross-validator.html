@@ -1,0 +1,27 @@
+<main class="cross-validator-page">
+	<form [formGroup]="passwordForm" (ngSubmit)="onSubmit()" novalidate>
+		<p class="eyebrow">Cross Field Validator</p>
+		<h1>Password confirmation</h1>
+		<p class="description">Masukkan password yang sama pada kedua field.</p>
+
+		<label for="password">Password</label>
+		<input id="password" type="password" formControlName="password" />
+		@if (passwordForm.controls.password.touched && passwordForm.controls.password.hasError('required')) {
+			<p class="error-message">Password wajib diisi.</p>
+		}
+
+		<label for="confirm-password">Konfirmasi password</label>
+		<input id="confirm-password" type="password" formControlName="confirmPassword" />
+		@if (passwordForm.controls.confirmPassword.touched && passwordForm.controls.confirmPassword.hasError('required')) {
+			<p class="error-message">Konfirmasi password wajib diisi.</p>
+		}
+
+		@if (passwordsDoNotMatch) {
+			<p class="error-message" role="alert">Password belum sama. Silakan periksa kembali.</p>
+		} @else if (submitted && passwordForm.valid) {
+			<p class="success-message" role="status">Password sudah sama. Form valid.</p>
+		}
+
+		<button type="submit">Cek password</button>
+	</form>
+</main>
