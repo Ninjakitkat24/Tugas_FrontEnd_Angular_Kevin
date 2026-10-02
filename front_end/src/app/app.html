@@ -1,0 +1,22 @@
+<main class="app-shell">
+  <header class="hero">
+    <p class="eyebrow">Angular 21 · Standalone Routing</p>
+    <h1>Belajar Model Routing</h1>
+    <p class="intro">
+      Setiap URL di bawah ini menampilkan component yang berbeda melalui
+      <code>&lt;router-outlet&gt;</code>.
+    </p>
+  </header>
+
+  <nav class="route-nav" aria-label="Navigasi contoh route">
+    <a routerLink="/route1" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Route 1
+    </a>
+    <a routerLink="/route2" routerLinkActive="active">Route 2</a>
+    <a routerLink="/route3" routerLinkActive="active">Route 3</a>
+  </nav>
+
+  <section class="route-content">
+    <router-outlet />
+  </section>
+</main>

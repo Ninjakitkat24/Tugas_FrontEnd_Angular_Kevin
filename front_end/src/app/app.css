@@ -1,0 +1,70 @@
+:host {
+  display: block;
+}
+
+.app-shell {
+  width: min(900px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 .75rem;
+  color: #52606d;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  color: #102a43;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.intro {
+  max-width: 650px;
+  margin: 0;
+  color: #52606d;
+  line-height: 1.6;
+}
+
+code {
+  padding: .15rem .4rem;
+  border-radius: .35rem;
+  background: #e9eef5;
+  color: #243b53;
+}
+
+.route-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.route-nav a {
+  padding: .65rem 1rem;
+  border: 1px solid #bcccdc;
+  border-radius: .6rem;
+  color: #334e68;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.route-nav a:hover,
+.route-nav a.active {
+  border-color: #1479b8;
+  color: #fff;
+  background: #1479b8;
+}
+
+.route-content {
+  min-height: 180px;
+}
