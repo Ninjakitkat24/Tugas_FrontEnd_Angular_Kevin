@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ninja\\jwt_experiment\\JwtLab\\JwtLab.csproj": {}
+    "C:\\Users\\ninja\\Tugas_FrontEnd\\jwt_experiment\\JwtLab\\JwtLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ninja\\jwt_experiment\\JwtLab\\JwtLab.csproj": {
+    "C:\\Users\\ninja\\Tugas_FrontEnd\\jwt_experiment\\JwtLab\\JwtLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ninja\\jwt_experiment\\JwtLab\\JwtLab.csproj",
+        "projectUniqueName": "C:\\Users\\ninja\\Tugas_FrontEnd\\jwt_experiment\\JwtLab\\JwtLab.csproj",
         "projectName": "JwtLab",
-        "projectPath": "C:\\Users\\ninja\\jwt_experiment\\JwtLab\\JwtLab.csproj",
+        "projectPath": "C:\\Users\\ninja\\Tugas_FrontEnd\\jwt_experiment\\JwtLab\\JwtLab.csproj",
         "packagesPath": "C:\\Users\\ninja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ninja\\jwt_experiment\\JwtLab\\obj\\",
+        "outputPath": "C:\\Users\\ninja\\Tugas_FrontEnd\\jwt_experiment\\JwtLab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

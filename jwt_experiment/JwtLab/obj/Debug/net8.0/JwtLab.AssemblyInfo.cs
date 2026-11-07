@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JwtLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7f5e4c4ab54ea8fac377fb346b5cca2850759e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("JwtLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JwtLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
